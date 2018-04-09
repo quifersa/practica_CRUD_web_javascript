@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/tabla.js"></script>
+  </head>
+
+  <body>
+    <div id="fondo">
+      <div class="centrado">
+        <ul>
+          <li> <a href="#" title="Principal"> Principal </a></li>
+          <li> <a href="#" title="Clientes"> Clientes </a> </li>
+          <li> <a href="#" title="Proveedores"> Proveedores </a> </li>
+          <li> <a href="#" title="Facturas"> Facturas </a> </li>
+          <li> <a href="#" title="Productos"> Productos </a> </li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>Formulario Proveedores</h1>
+      </div>
+
+      <form>
+  	    <div class="centrado" style="width:500px">
+  	        <div class="div_formulario">
+  	          <label for="idempresa">Nombre de la empresa proveedora:</label> <input type="text" size="50" id="idEmpresa" placeholder="Nombre de la empresa proveedora">
+  	        </div>
+  	        <div class="div_formulario">
+  	          <label for="iddireccion">Dirección:</label> <input type="text" size="70" id="idDireccion" placeholder="Dirección">
+  	        </div>
+  	        <div class="div_formulario">
+  	          <label for="idrepresentante">Nombre del representante de la empresa:</label> <input type="text" size="50" id="idRepresentante" placeholder="Nombre del representante de la empresa">
+  	        </div>
+  	        <div class="div_formulario">
+  	         <label for="idtelefono">Teléfono:</label> <input type="text" size="20" id="idTelefono" placeholder="Teléfono">
+  	        </div>
+  	        <div class="div_formulario">
+  	          <label for="idweb">Página web:</label> <input type="text" size="60" id="idWeb" placeholder="Página web">
+  	        </div>
+  	        <div>
+  	          <label for="entjur">Entidad Jurídica:</label>
+  	          <select id="idEntidadJur">
+  	            <option value="Sociedad Anónima">Sociedad Anónima</option>
+  	            <option value="Sociedad Limitada">Sociedad Limitada</option>
+  	            <option value="Unipersonal">Unipersonal</option>
+  	            <option value="Empresa conjunta">Empresa conjunta</option>
+  	            <option value="Franquicia">Franquicia</option>
+  	            <option value="Sin ánimo de lucro">Sin ánimo de lucro</option>
+  	           </select>
+  	        </div>
+  	    </div>
+  	  </form>
+
+      <div class="div_formulario_2" style="width:70px, display:inline">
+        <button id="botonRegistrar" onclick="buildTable();">Registrar</button>
+        <button id="botonGuardarCambios" onclick="guardarCambiosEdicion();" hidden>Guardar cambios</button>
+        <button id="botonCancelar" onclick="cancelarEdicion();" hidden>Cancelar</button>
+      </div>
+
+      <div>
+        <h2>Listado de Proveedores</h2>
+        <table id="tablaProveedores">
+          <thead>
+            <tr>
+              <th>Nombre empresa</th>
+              <th>Dirección</th>
+              <th>Nombre representante</th>
+              <th>Teléfono</th>
+              <th>Página web</th>
+              <th>Entidad jurídica</th>
+            </tr>
+          </thead>
+          <tbody id="tableContactBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>  
+</html> 

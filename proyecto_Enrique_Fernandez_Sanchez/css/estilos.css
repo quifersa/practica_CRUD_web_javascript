@@ -1,0 +1,61 @@
+#fondo{
+		background-image: url(../img/fondo_formulario.jpg);
+		padding: 10px;
+	 	/*IMPORTANTE, hay que ponerle un ancho, y con lo de margin:0 auto lo centras*/
+	 	width: 1000px;
+	 	margin: 0 auto;
+		}
+*{
+	font-family: Arial, sans-serif; /*Se le pone varias fuentes para que por si la primera no lo lee el navegador pasaría a la segunda*/
+	font_size: 16px; /*Este es el valor del tamaño de la fuente por defecto, lo especifiques
+					   o no tiene ese tamaño la letra a menos de que definas otro tamaño*/
+ }
+ .centrado{
+ 			margin:0 auto;
+ 		  }
+ .content{
+ 			padding: 10px;
+ 			/*IMPORTANTE, hay que ponerle un ancho, y con lo de margin:0 auto lo centras*/
+ 			width: 800px;
+ 			margin: 0 auto;
+ 			/*Lo de margin:0 auto es lo mismo que lo de abajo
+ 			margin-top:0;
+ 			margin-bottom:0;
+ 			margin-left;
+ 			margin-right;*/
+ 		 }
+ .div_formulario{
+ 					text-align: center;
+ 				}
+.div_formulario_2{
+					margin:0 auto;
+ 					text-align: center;
+ 				}
+ h1{text-align:center;}
+div{
+	margin-top:10px;
+	margin-bottom: 10px;
+	}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+	}
+
+li {
+	float: left;
+	}
+
+li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+	}
+
+li a:hover {
+			background-color: #111111;
+			}
